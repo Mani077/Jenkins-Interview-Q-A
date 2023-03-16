@@ -1,5 +1,5 @@
 # Jenkins-Interview-Q-A
-1. How to downgrade/upgrade the Jenkins ?
+1. ### How to downgrade/upgrade the Jenkins ?
 Ans:
 Go to jenkins check the version : Java --version 
 Then go to usr/share/java
@@ -21,6 +21,14 @@ it will changes jenkins version
 ### 2.Taking Backup and Restoring Jenkins Server.?
 
 Goto manage jenkins --> Manage plug ins --> and install thin backup or periodic backup plug in 
-
+--> Now login to jenkins instance create one backup folder on opt directory
+mkdir /opt/backup
+--> give ownership to Jenkins user 
+chown -R jenkins:jenkins /opt/backup/
+--> Now goto jenkins --> Managejenkins--> Periodic backup --> Give the directory path
+ Save and apply
+ 
+###    
+ 
 
 
